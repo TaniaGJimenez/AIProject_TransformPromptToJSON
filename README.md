@@ -7,114 +7,79 @@
 - [3. Resumen del proyecto](#3-resumen-del-proyecto)
 - [4. Objetivos de aprendizaje](#4-objetivos-de-aprendizaje)
 - [5. Criterios de aceptación](#5-criterios-de-aceptación)
-- [6. Getting started](#6-getting-started)
+- [6. Implementación paso a paso](#6-implementación-paso-a-paso)
 - [7. Valida tu solución](#7-valida-tu-solución)
 - [8. Recursos](#8-recursos)
 
 ---
 
 ## 1. Consideraciones generales
-
-- Este proyecto lo resolvemos de manera **individual**.
-- El rango de tiempo estimado para completar el proyecto es de 1 a 2 Sprints.
+Este proyecto se realizó de manera individual.
 
 ## 2. Preámbulo
 
-La Inteligencia Artificial Generativa (IA Generativa) es una rama de la IA que
-se centra en crear sistemas capaces de generar contenido nuevo y original, como
-imágenes, música o texto, imitando patrones y estilos previamente aprendidos.
-Esto puede ser muy útil para automatizar procesos como el generar copys,
-escribir email, analizar datos, etc.
+La Inteligencia Artificial Generativa (IA Generativa) es una rama de la IA que se centra en crear sistemas capaces de generar contenido nuevo y original, como imágenes, música o texto, imitando patrones y estilos previamente aprendidos. Esto es útil para automatizar procesos como generar copys, escribir correos electrónicos, analizar datos, entre otros.
 
-Para poder explotar estas capacidades tenemos que hacer uso del “Prompt
-Engineering”, la ingeniería de promping es el proceso de diseñar y perfeccionar
-cuidadosamente las instrucciones o "prompts" que se utilizan para interactuar
-con un modelo de lenguaje AI como GPT-3.5. Implica experimentar con diferentes
-preguntas o comandos para obtener respuestas más precisas y útiles del modelo.
-La idea es encontrar la forma óptima de expresar una solicitud o consulta para
-obtener la respuesta deseada, ajustando la estructura, el tono y el formato del
-prompt para maximizar la efectividad de la comunicación con la IA.
+En este proyecto, se aplicó el "Prompt Engineering", que es el proceso de diseñar y perfeccionar cuidadosamente las instrucciones o "prompts" que se utilizan para interactuar con un modelo de lenguaje AI como GPT-3.5. Se experimentó con diferentes preguntas o comandos para obtener respuestas precisas y útiles del modelo, ajustando la estructura, el tono y el formato del prompt para maximizar la efectividad de la comunicación con la IA.
 
 ## 3. Resumen del proyecto
 
-Aplicarás tus habilidades de prompting para crear una aplicación que aproveche
-el encadenamiento de prompts para producir un resultado en formato JSON, tu
-chatflow debe tomar el input del usurario y utilizarlo como parte de los prompts
-que crearás para generear información extra que le sea útil al usuario,
-utilizarás la herramienta [Flowise](https://flowiseai.com/).
+Se aplicaron habilidades de prompting para crear una aplicación que aprovecha el encadenamiento de prompts para producir un resultado en formato JSON. Este chatflow toma el input del usuario y lo utiliza como parte de los prompts que creamos para generar información adicional útil para el usuario. Se ha utilizado la herramienta [Flowise](https://flowiseai.com/).
 
-El tema y la utilidad de tu aplicación es libre, piensa en un escenario dónde
-una usuaria puede aprovechar esta funcionalidad.
-
-En este ejemplo se toma el nombre de un platillo gastronómico y a través de
-prompting se obtiene los ingredientes que lo conforman y el país de origen del
-platillo, dando esta información como un objeto en formato JSON.
+El tema y la utilidad de la aplicación es libre. En este proyecto, se tomó el nombre de un platillo gastronómico como input y, a través del prompting, se obtuvo los ingredientes que lo conforman y el país de origen del platillo, proporcionando esta información como un objeto en formato JSON.
 
 ![image](https://github.com/Laboratoria/curriculum/assets/5282075/801b660d-6c92-44ed-9735-0d401f5a3918)
 
 ## 4. Objetivos de aprendizaje
 
-Familiarizarse con los principales conceptos alrededor de la
-[Inteligencia Artificial Generativa](https://es.wikipedia.org/wiki/Inteligencia_artificial_generativa)
-y trabajar con [Flowise](https://docs.flowiseai.com/) para implementar
-soluciones AI expuestas atraves de una API.
-Flowise es una herramienta basada en [LangChain](https://docs.langchain.com/docs/),
-por lo que además deberás poder entender los conceptos fundamentales de esta
-herramienta.
+Con este proyecto se ha logrado familiarizar con los principales conceptos en torno a la [Inteligencia Artificial Generativa](https://es.wikipedia.org/wiki/Inteligencia_artificial_generativa) y hemos trabajado con [Flowise](https://docs.flowiseai.com/) para implementar soluciones AI a través de una API. Flowise es una herramienta basada en [LangChain](https://docs.langchain.com/docs/), por lo que hemos entendido los conceptos fundamentales de esta herramienta.
 
-- [ ] [Flowise basics](https://www.youtube.com/watch?v=tD6fwQyUIJE&list=PL4HikwTaYE0HDOuXMm5sU6DH6_ZrHBLSJ)
-- [ ] [Langchain Components](https://docs.langchain.com/docs/category/components)
-- [ ] [Chat models](https://docs.flowiseai.com/chat-models)
-- [ ] [Estructuración de Datos](https://learnprompting.org/es/docs/basic_applications/table_generation)
-- [ ] [Cadenas](https://docs.langchain.com/docs/components/chains/)
-- [ ] [Prompts Templates](https://docs.langchain.com/docs/components/prompts/)
+Se completaron los siguientes objetivos de aprendizaje:
+
+- [x] [Flowise basics](https://www.youtube.com/watch?v=tD6fwQyUIJE&list=PL4HikwTaYE0HDOuXMm5sU6DH6_ZrHBLSJ)
+- [x] [Langchain Components](https://docs.langchain.com/docs/category/components)
+- [x] [Chat models](https://docs.flowiseai.com/chat-models)
+- [x] [Estructuración de Datos](https://learnprompting.org/es/docs/basic_applications/table_generation)
+- [x] [Cadenas](https://docs.langchain.com/docs/components/chains/)
+- [x] [Prompts Templates](https://docs.langchain.com/docs/components/prompts/)
 
 ## 5. Criterios de aceptación
 
-1. Deberás configurar tu chatflow de manera que tome el input del usuario y sea
-  utilizado como parte de la cadena de prompts.
+Para garantizar el éxito del proyecto, se tomaron los siguientes criterios de aceptación:
+-Configurar tu chatflow de manera que tome el input del usuario y sea utilizado como parte de la cadena de prompts.
+-Utilizar el módelo gpt-3.5-turbo.
+-El chatbot generado debe ser capaz de generar respuestas en formato JSON.
+-Los github actions deben pasar exitosamente.
+-Se deben utilizar al menos lo siguientes nodos:
+  LLM Chain
+  Prompt Template
+  Chat Prompt Template
 
-2. Utilizar el módelo `gpt-3.5-turbo`.
+## 6. Implementación Paso a Paso
 
-3. El chatbot generado debe ser capaz de generar respuestas en formato JSON.
+A continuación, se describen los pasos que se siguieron para implementar este proyecto:
 
-4. Tus github actions deben pasar exitosamente.
+**Paso 1: Definición del Tema**
+- Se eligió el tema y la utilidad de la aplicación. En este caso, la aplicación tomaría el nombre de un platillo gastronómico como input y proporcionaría los ingredientes y el país de origen del platillo en formato JSON como resultado.
 
-5. Debes utilizar al menos lo siguientes nodos:
+**Paso 2: Instalación de Flowise**
+- Se instaló flowise globalmente [Flowise](https://github.com/FlowiseAI/Flowise). Esto permitió utilizar la herramienta para crear y configurar nuestro chatflow.
 
-- LLM Chain
-- Prompt Template
-- Chat Prompt Template
+**Paso 3: Creación del Chatflow**
+- Se creo un chatflow que tomaría el input del usuario y lo utilizaría como parte de la cadena de prompts. Configurando los nodos necesarios, incluyendo LLM Chain, Prompt Template y Chat Prompt Template, para lograr el flujo de conversación deseado.
 
-## 6. Getting started
+**Paso 4: Configuración del Modelo AI**
+- Se eligió modelo AI adecuado para el proyecto, en este caso, el modelo `gpt-3.5-turbo`. Configurando el chatbot para que utilizara este modelo.
 
-### Instalar Flowise
+**Paso 5: Definición de Variables de Entorno**
+- Se definió una variable de ambiente con el nombre `OPENAI_API_KEY` y se asignó el valor de una API key de OpenAI. Permitiendo así, utilizar los servicios de OpenAI.
 
-Seguir las indicaciones para instalar globalmente [flowise](https://github.com/FlowiseAI/Flowise)
+**Paso 6: Pruebas y Validación**
+- Antes de finalizar, se realizaron pruebas exhaustivas para asegurar que el chatbot generaba respuestas en formato JSON de manera correcta. 
+- Una vez que la aplicación estuvo funcionando correctamente, se utilizó tanto a través de la interfaz de usuario proporcionada por Flowise como mediante peticiones HTTP para verificar su funcionamiento en un entorno real.
 
-```bash
-npm  install  -g  flowise
-
-npx  flowise  start
-```
-
-## 7. Valida tu solución
-
-Necesitarás definir una variable de ambiente con el nombre `OPENAI_API_KEY` y
-darle el valor de api key de OpenAI que utilizarás
-
-Antes de ejecutar los test copiar en la carpeta `/test` con el nombre
-`'flow.json'` el archivo de exportación del flow implementado
-
-```bash
-OPENAI_API_KEY=<TODO:  poner  tu api  key> npm  test
-```
-
-Una vez inicializada la herramienta podrás acceder [aquí](http://localhost:3000/)
-
-Utilizarás esta herramienta para crear y configurar tu propia aplicación AI,
-la cual podrás utilizar por medio de la UI proporcionada y también a través de
-peticiones HTTP.
+**Paso 7: Uso de la Herramienta**
+Se corrieron los test de forma local y también se revisó que las GitHub Actions pasaran exitosamente para garantizar la continuidad del proyecto.
 
 ## 8. Recursos
 
