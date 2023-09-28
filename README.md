@@ -11,7 +11,6 @@
 - [7. Valida tu solución](#7-valida-tu-solución)
 - [8. Recursos](#8-recursos)
 
----
 
 ## 1. Consideraciones generales
 Este proyecto se realizó de manera individual.
@@ -27,8 +26,6 @@ En este proyecto, se aplicó el "Prompt Engineering", que es el proceso de dise�
 Se aplicaron habilidades de prompting para crear una aplicación que aprovecha el encadenamiento de prompts para producir un resultado en formato JSON. Este chatflow toma el input del usuario y lo utiliza como parte de los prompts que creamos para generar información adicional útil para el usuario. Se ha utilizado la herramienta [Flowise](https://flowiseai.com/).
 
 El tema y la utilidad de la aplicación es libre. En este proyecto, se tomó el nombre de un platillo gastronómico como input y, a través del prompting, se obtuvo los ingredientes que lo conforman y el país de origen del platillo, proporcionando esta información como un objeto en formato JSON.
-
-![image](https://github.com/Laboratoria/curriculum/assets/5282075/801b660d-6c92-44ed-9735-0d401f5a3918)
 
 ## 4. Objetivos de aprendizaje
 
@@ -68,6 +65,9 @@ A continuación, se describen los pasos que se siguieron para implementar este p
 **Paso 3: Creación del Chatflow**
 - Se creo un chatflow que tomaría el input del usuario y lo utilizaría como parte de la cadena de prompts. Configurando los nodos necesarios, incluyendo LLM Chain, Prompt Template y Chat Prompt Template, para lograr el flujo de conversación deseado.
 
+![Ingredient List Image Flow](img/ingredientList_Img_Flow.png)
+
+
 **Paso 4: Configuración del Modelo AI**
 - Se eligió modelo AI adecuado para el proyecto, en este caso, el modelo `gpt-3.5-turbo`. Configurando el chatbot para que utilizara este modelo.
 
@@ -76,10 +76,17 @@ A continuación, se describen los pasos que se siguieron para implementar este p
 
 **Paso 6: Pruebas y Validación**
 - Antes de finalizar, se realizaron pruebas exhaustivas para asegurar que el chatbot generaba respuestas en formato JSON de manera correcta. 
+
+![Ingredient List Image Input](img/ingredientList_Img_Input.png)
+
 - Una vez que la aplicación estuvo funcionando correctamente, se utilizó tanto a través de la interfaz de usuario proporcionada por Flowise como mediante peticiones HTTP para verificar su funcionamiento en un entorno real.
+
+![Ingredient List Image Output](img/ingredientList_Img_Output.png)
 
 **Paso 7: Uso de la Herramienta**
 Se corrieron los test de forma local y también se revisó que las GitHub Actions pasaran exitosamente para garantizar la continuidad del proyecto.
+
+![Ingredient List Image Test](img/ingredientList_Img_Test.png)
 
 ## 8. Recursos
 
